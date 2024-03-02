@@ -71,7 +71,7 @@ function App() {
   
   return (<div className='m-8'>
     {enableForm && <From handleChange={handleChange} handleSubmit={handleSubmit} values={formData} setEnableFrom={setEnableFrom}/>}
- {allUsers.length !== 0  && !enableForm && <Table setEditFrom={setFromData} setEnableFrom={setEnableFrom} data={allUsers} focus={setFocus} deleteUser={deleteUser} setFromUpdate={setFromUpdate}/>}
+ {!enableForm && <Table setEditFrom={setFromData} setEnableFrom={setEnableFrom} data={allUsers} focus={setFocus} deleteUser={deleteUser} setFromUpdate={setFromUpdate}/>}
   </div>);
 }
 
